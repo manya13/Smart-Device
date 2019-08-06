@@ -1,0 +1,65 @@
+.main-nav {
+  width: $desktop-width;
+  margin: 0 auto;
+  margin-bottom: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__link {
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--mail {
+    margin-left: auto;
+    margin-right: 85px;
+  }
+
+  &--phone {
+    margin-right: 35px;
+  }
+}
+
+.main-nav__cb {
+  width: 180px;
+  height: 45px;
+  padding: 0;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: $font-roboto;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+
+
+
+
