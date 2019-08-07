@@ -1,0 +1,97 @@
+.advantage {
+  width: $desktop-content-width;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.advantage__item {
+  width: 48%;
+  padding: 40px 45px 50px;
+  margin-bottom: 30px;
+
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid #00B2FF;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #00B2FF;
+    border-color: #00B2FF;
+
+    &.advantage__item h3,
+    &.advantage__item p {
+      color: #ffffff;
+    }
+
+    &.advantage__item span {
+      fill: #ffffff;
+    }
+  }
+}
+
+.advantage__item span {
+  fill: #00B2FF;
+}
+
+.advantage__item h3 {
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+  font-weight: 400;
+}
+
+.advantage__item p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+
+@media (max-width: $desktop-width) {
+  .advantage {
+    width: $tablet-content-width;
+  }
+
+  .advantage__item {
+    padding: 24px 20px 20px 25px;
+  }
+
+  .advantage__item h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .advantage__item p {
+    margin: 0;
+  }
+
+}
+
+
+@media (max-width: $tablet-width) {
+  .advantage {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .advantage__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .advantage__item h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+
+}

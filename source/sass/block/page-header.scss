@@ -1,10 +1,23 @@
 .page-header {
   padding-top: 50px;
+  padding-bottom: 110px;
 
   background-color: #1B2931;
   background-image: url("../img/header-back.png");
 }
 
 
+@media (max-width: $desktop-width) {
+  .page-header {
+    padding-top: 25px;
+    padding-bottom: 163px;
+    position: relative;
+  }
+}
 
 
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding-bottom: 70px;
+  }
+}
