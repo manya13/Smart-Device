@@ -8,26 +8,32 @@
 .offer-text {
   text-align: left;
   color: #FFFFFF;
-  width: 500px;
+  width: 55%;
 }
 
 .offer-img {
-  width: 520px;
+  width: 45%;
+  height: 515px;
   position: relative;
 
   background-image: url("../img/offer-back.svg");
-  background-size: cover;
-  background-position: bottom;
+  background-position-y: bottom;
+  background-position-x: left;
+  background-repeat: no-repeat;
 }
 
 .offer-img img {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 10px;
+  top: 13px;
+  width: 705px;
+  height: 515px;
+  max-width: 705px;
+  max-height: 515px;
 }
 
 .offer-text h2 {
-  margin: 30px 0;
+  margin: 69px 0 27px;
 
   font-family: "Roboto Condensed";
   font-weight: 700;
@@ -39,8 +45,8 @@
 
 .offer-text p {
   margin: 0;
-  margin-bottom: 25px;
-  padding-left: 60px;
+  margin-bottom: 45px;
+  padding-left: 94px;
   position: relative;
 
   font-size: 22px;
@@ -50,17 +56,17 @@
     content: "";
 
     position: absolute;
-    width: 40px;
+    width: 65px;
     height: 2px;
+    top: 17px;
     left: 0;
-    top: 15px;
 
     background-color: #FFFFFF;
   }
 }
 
 .offer-text button {
-  margin-left: 60px;
+  margin-left: 94px;
   display: block;
   width: 407px;
   height: 55px;
@@ -91,8 +97,8 @@
 }
 
 .offer a {
-  margin-top: 150px;
-  margin-left: -43px;
+  margin-top: -35px;
+  margin-left: -30px;
   
   font-size: 14px;
   line-height: 16px;
@@ -112,6 +118,30 @@
 
 }
 
+@media (max-width: 1600px) {
+  .offer {
+    width: 1000px;
+  }  
+
+  .offer-img {
+    height: 430px;
+
+    background-size: cover;
+  }
+
+  .offer-img img {
+    width: 500px;
+    height: auto;
+    top: 40px;
+    left: -50px;
+  }
+
+  .offer a {
+    margin-top: 135px;
+    margin-left: -45px;
+  }
+}
+
 
 @media (max-width: $desktop-width) {
   .offer {
@@ -119,7 +149,7 @@
   }
 
   .offer-text {
-    width: 425px;
+    width: 500px;
     padding-left: 63px;
   }
 
@@ -132,7 +162,7 @@
 
   .offer-text p {
     padding-left: 50px;
-    margin-bottom: 53px;
+    margin-bottom: 57px;
 
     font-size: 18px;
     line-height: 28px;
@@ -149,16 +179,20 @@
 
   .offer-img {
     position: absolute;
-    top: 100px;
+    top: 75px;
     right: 0;
     width: 350px;
-    height: 300px;
+    height: 395px;
+    background-position-y: 108%;
+    background-position-x: -12%;
+    background-size: 150%;
   }
 
   .offer-img img {
     left: auto;
     right: 0;
-    top: 45px;
+    top: 37px;
+    width: 255px;
   }
 
   .offer a {
@@ -181,7 +215,9 @@
 
   .offer-text h2 {
     margin-top: 195px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
+    position: relative;
+    z-index: 10;
 
     font-size: 40px;
     line-height: 47px;
@@ -192,6 +228,10 @@
 
     font-size: 16px;
     line-height: 25px;
+
+    &::before {
+      width: 34px;
+    }
   }
 
   .offer-text button {
@@ -204,10 +244,15 @@
     top: 75px;
     right: 0;
     width: 100%;
+
+    background-position-y: 124%;
+    background-position-x: -78%;
+    background-size: 160%;
   }
 
   .offer-img img {
-    top: 0;
+    top: 20px;
+    width: 300px;
   }
 
 }
