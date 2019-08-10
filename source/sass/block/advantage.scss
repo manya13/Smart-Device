@@ -21,6 +21,7 @@
   box-sizing: border-box;
   text-align: left;
   cursor: pointer;
+  background-color: #ffffff;
 
   &:hover,
   &:focus {
@@ -70,13 +71,14 @@
 
 @media (max-width: $desktop-width) {
   .advantage {
-    width: $tablet-content-width;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 25px;
   }
 
   .advantage__item {
-    padding: 24px 20px 20px 25px;
-    width: 345px;
+    padding: 24px 18px 20px 25px;
+    width: calc((100% - 30px) / 2);
     min-height: 232px;
   }
 
@@ -98,14 +100,14 @@
 
 @media (max-width: $tablet-width) {
   .advantage {
-    width: 100%;
-    padding: 0 15px;
+    padding: 0 18px 0 12px;
     margin-bottom: 37px;
   }
 
   .advantage__item {
     width: 100%;
     margin-bottom: 20px;
+    padding: 24px 18px 23px 25px;
   }
 
   .advantage__item h3 {

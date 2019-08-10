@@ -1,0 +1,368 @@
+.consultation {
+  padding-top: 90px;
+  padding-bottom: 110px;
+
+  background-color: #00B2FF;
+  text-align: left;
+  background-image: url("../img/form-back.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.modal {
+  width: 490px;
+  height: 605px;
+  padding: 30px 40px;
+  margin: 0 auto;
+  position: relative;
+
+  background: #00B2FF;
+  text-align: left;
+}
+
+.consultation__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 630px;
+    height: 515px;
+    left: -200px;
+    top: -30px;
+    background-image: url("../img/offer-back.svg");
+    background-position-y: bottom;
+    background-position-x: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.consultation__img {
+  width: 490px;
+  position: relative;
+  z-index: 10;
+
+  background-image: url("../img/form.svg");
+  background-position-y: 36%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.consultation__form {
+  width: 570px;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.consultation__form h2 {
+  margin: 0;
+
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.modal__form h2 {
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.consultation__form p,
+.consultation__form input::placeholder,
+.consultation__form textarea::placeholder,
+.consultation__form input,
+.consultation__form textarea {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $main-font;
+}
+
+.consultation__form > p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.modal__form > p {
+  margin-bottom: 34px;
+}
+
+.consultation__form form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.consultation__form form p {
+  position: relative;
+  width: 270px;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #ffffff;
+
+  &:nth-child(3) {
+    width: 100%;
+  }
+
+  &:nth-child(4) {
+    order: 1;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.modal__form form p {
+  width: 100%;
+  margin-bottom: 32px;
+
+  &:nth-child(3) {
+    margin-bottom: 24px;
+  }
+}
+
+.consultation__form form input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 9px;
+  
+  border: none;
+  background-color: #19BAFF;
+}
+
+.consultation__form form textarea {
+  width: 100%; 
+  height: 155px;
+  padding-left: 20px;
+  padding-top: 12px;
+
+  resize: none;
+  border: none;
+  background-color: #19BAFF;
+}
+
+.modal__form form textarea {
+  height: 105px;
+}
+
+.consultation__form form button {
+  max-width: 270px;
+  padding: 14px 77px;
+  
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.modal__form form button {
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.consultation__form form p:nth-child(4) label {
+  padding-left: 40px;
+  display: block;
+
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.modal__form form p:nth-child(4) label {
+  padding-left: 46px;
+}
+
+.consultation__form form p input + label,
+.consultation__form form p input:focus + label {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+  
+    cursor: pointer;
+  }
+}
+
+.modal__form form p input + label,
+  .modal__form form p input:focus + label {
+    &::before {
+      left: 0;
+    }
+  }
+
+.consultation__form form p input:checked + label {
+  &::before {
+    background-image: url("../img/checkbox-on.svg");
+  }
+
+  .modal__form form p input:focus + label {
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .consultation {
+    background-image: none;
+  }
+
+  .consultation__wrap {
+    width: 1000px;
+
+    &::after {
+      width: 500px;
+      height: 405px;
+      left: -60px;
+      background-size: cover;
+    }
+  }  
+
+  .consultation__img {
+    width: 400px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .consultation {
+    padding-top: 80px;
+    padding-bottom: 105px;
+  }
+
+  .consultation__wrap {
+    width: 590px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .consultation__form {
+    width: 100%;
+  }
+
+  .consultation__img {
+    display: none;
+  }
+
+  .consultation__form > p {
+    margin-top: 15px;
+    margin-bottom: 53px;
+  }
+
+  .consultation__form form p {
+    width: 280px;
+    margin-bottom: 45px;
+
+    &:nth-child(3) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .consultation--popup form p {
+    width: 100%;
+  }
+
+  .consultation__form h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .consultation__form form button {
+    max-width: 280px;
+    padding: 14px 84px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .consultation {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .consultation__wrap {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .consultation__form h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .consultation__form > p {
+    margin-top: 13px;
+    margin-bottom: 25px;
+  }
+
+  .consultation__form form p {
+    margin-bottom: 33px;
+    width: 100%;
+  }
+
+  .consultation__form form input, 
+  .consultation__form form textarea {
+    padding-left: 15px;
+  }
+
+  .consultation__form form textarea {
+    height: 105px;
+  }
+
+  .consultation__form form p:nth-child(3) {
+    margin-bottom: 23px;
+  }
+
+  .consultation__form form button {
+    max-width: 100%;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 32px;
+  }
+
+  .consultation__form form p:nth-child(4) label {
+    padding-left: 32px;
+  }
+
+  .consultation__form form p input+label::before, 
+  .consultation__form form p input:focus+label::before,
+  .consultation__form form p input:checked+label::after {
+    left: 0;
+  }
+
+}

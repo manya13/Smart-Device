@@ -7,7 +7,7 @@
   width: 1170px;
   margin: 0 auto;
   padding-top: 88px;
-  padding-bottom: 115px;
+  padding-bottom: 80px;
 }
 
 .products h2 {
@@ -24,15 +24,17 @@
 .products ul {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   list-style: none;
 }
 
 .products li {
   width: 370px;
-  height: 620px;
+  height: 625px;
   position: relative;
+  margin-right: 30px;
+  margin-bottom: 30px;
 
   background-image: url("../img/product-1.png");
   border: 2px solid #1B2D37;
@@ -44,6 +46,10 @@
 
   &:last-child {
     background-image: url("../img/product-3.png");
+  }
+
+  &:nth-child(3n + 3) {
+    margin-right: 0;
   }
 
   &::after,
@@ -111,7 +117,9 @@
 
 @media (max-width: $desktop-width) {
   .products__wrap {
-    width: $tablet-content-width;
+    width: 100%;
+    padding: 0 25px;
+    padding-bottom: 13px;
   }
 
   .products ul {
@@ -124,6 +132,7 @@
     margin-bottom: 45px;
 
     background-image: url("../img/product-1-p.png");
+    background-size: cover;
   
     &:nth-child(2) {
       background-image: url("../img/product-2-p.png");
@@ -154,14 +163,21 @@
 
 
 @media (max-width: $tablet-width) {
+  .products {
+    padding-bottom: 35px;
+  }
+
   .products__wrap {
-    width: 100%;
     padding: 0 15px;
     padding-top: 50px;
   }
 
+  .products ul {
+    margin: 0;
+  }
+
   .products li {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 
     background-image: url("../img/product-1-m.png");
   
@@ -171,6 +187,13 @@
   
     &:last-child {
       background-image: url("../img/product-3-m.png");
+    }
+
+    &::before {
+      right: 30px;
+      bottom: 28px;
+      width: 6px;
+      height: 6px;
     }
   }
 
