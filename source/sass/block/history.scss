@@ -53,10 +53,11 @@
   width: 180px;
   height: 320px;
 
-  background-image: url("../img/year.svg");
+  background-image: url("../img/year.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 70%;
+  opacity: 1;
 }
 
 .history__info {
