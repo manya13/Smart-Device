@@ -2,6 +2,7 @@
   width: 1170px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 
   text-align: left;
 }
@@ -23,7 +24,7 @@
 
 .history__info a {
   display: block;
-  max-width: 180px;
+  width: 180px;
   padding: 16px 48px 12px;
   margin-top: 40px;
 
@@ -50,18 +51,20 @@
 }
 
 .history__img {
-  width: 180px;
+  position: relative;
+  width: 115px;
   height: 320px;
+}
 
-  background-image: url("../img/year.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: 70%;
-  opacity: 1;
+.history__img img {
+  position: absolute;
+  max-width: max-content;
+  right: 0;
+  top: 10px;
 }
 
 .history__info {
-  width: calc(100% - 180px);
+  width: 990px;
 }
 
 
@@ -70,11 +73,9 @@
     width: 1000px;
   }  
 
-  .history__img {
-    background-position-x: 50%;
+  .history__info {
+    width: 830px;
   }
-
-
 }
 
 @media (max-width: $desktop-width) {
@@ -84,17 +85,29 @@
   }
 
   .history__img {
-    width: 185px;
-    height: 365px;
+    width: 130px;
+    height: 360px;
+  }
+
+  .history__img img {
+    top: 0;
+  }
+
+  .history__info {
+    width: calc(100% - 185px);
   }
 
   .history__info a {
-    margin-top: 43px;
+    margin-top: 42px;
   }
 
   .history__info h3 {    
     font-size: 32px;
     line-height: 45px;
+  }
+
+  .history__info p {
+    margin-bottom: 20px;
   }
 }
 
@@ -120,13 +133,11 @@
   }
 
   .history__info p {
-    &:first-child {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
   }
   
   .history__info a {
-    margin-top: 27px;
+    margin-top: -12px;
   }
 
 }

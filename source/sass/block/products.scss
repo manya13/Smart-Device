@@ -7,7 +7,7 @@
   width: 1170px;
   margin: 0 auto;
   padding-top: 88px;
-  padding-bottom: 80px;
+  padding-bottom: 94px;
 }
 
 .products h2 {
@@ -23,34 +23,26 @@
 
 .products ul {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   list-style: none;
+
+  &::after {
+    content: "";
+    width: 32%;
+  }
 }
 
 .products li {
-  width: 370px;
+  width: 32%;
   height: 625px;
   position: relative;
-  margin-right: 30px;
   margin-bottom: 30px;
 
-  background-image: url("../img/product-1.png");
   border: 2px solid #1B2D37;
-  background-repeat: no-repeat;
-
-  &:nth-child(2) {
-    background-image: url("../img/product-2.png");
-  }
-
-  &:last-child {
-    background-image: url("../img/product-3.png");
-  }
-
-  &:nth-child(3n + 3) {
-    margin-right: 0;
-  }
 
   &::after,
   &::before {
@@ -83,6 +75,19 @@
     border: 2px solid #00B2FF;
   }
 }
+
+.products li p {
+  margin: 0;
+}
+
+.products li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 
 .products a {
   display: block;
@@ -118,8 +123,7 @@
 @media (max-width: $desktop-width) {
   .products__wrap {
     width: 100%;
-    padding: 0 25px;
-    padding-bottom: 13px;
+    padding: 50px 25px 36px;
   }
 
   .products ul {
@@ -129,18 +133,7 @@
   .products li {
     width: 100%;
     height: 260px;
-    margin-bottom: 45px;
-
-    background-image: url("../img/product-1-p.png");
-    background-size: cover;
-  
-    &:nth-child(2) {
-      background-image: url("../img/product-2-p.png");
-    }
-  
-    &:last-child {
-      background-image: url("../img/product-3-p.png");
-    }
+    margin-bottom: 42px;
   }
 
   .products h2 {
@@ -148,10 +141,6 @@
 
     font-size: 32px;
     line-height: 45px;
-  }
-
-  .products__wrap {
-    padding-top: 50px;
   }
 
   .products a {
@@ -178,16 +167,6 @@
 
   .products li {
     margin-bottom: 26px;
-
-    background-image: url("../img/product-1-m.png");
-  
-    &:nth-child(2) {
-      background-image: url("../img/product-2-m.png");
-    }
-  
-    &:last-child {
-      background-image: url("../img/product-3-m.png");
-    }
 
     &::before {
       right: 30px;
