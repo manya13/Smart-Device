@@ -1,6 +1,4 @@
 .advantage {
-  width: 1170px;
-  margin: 0 auto;
   margin-bottom: 70px;
   padding: 0;
   display: flex;
@@ -22,6 +20,7 @@
   text-align: left;
   cursor: pointer;
   background-color: #ffffff;
+  transition: all 0.3s linear;
 
   &:hover,
   &:focus {
@@ -47,7 +46,7 @@
   margin-top: 14px;
   margin-bottom: 15px;
 
-  font-family: "Roboto Condensed";
+  font-family: $font-roboto;
   font-size: 24px;
   line-height: 34px;
   color: #00B2FF;
@@ -62,10 +61,6 @@
 }
 
 @media (max-width: 1600px) {
-  .advantage {
-    width: 1000px;
-  }  
-
   .advantage__item {
     width: 485px;
   }
@@ -73,7 +68,6 @@
 
 @media (max-width: $desktop-width) {
   .advantage {
-    width: 100%;
     padding: 0 25px;
     margin-bottom: 25px;
   }

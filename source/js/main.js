@@ -1,7 +1,9 @@
 'use strict';
 
-var margin = -30;
-  $("a").click(function() {
+(function () {
+
+  var margin = -30;
+  $(".js-scroll").click(function() {
   $("html, body").animate({
     scrollTop: $($(this).attr("href")).offset().top+margin+ "px" 
   }, {
@@ -45,6 +47,7 @@ var margin = -30;
     });
   });
   
+})();
 
 
   

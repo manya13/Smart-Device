@@ -1,0 +1,23 @@
+.block-wrap {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1600px) {
+  .block-wrap {
+    width: 1000px;
+  }  
+}
+
+@media (max-width: $desktop-width) {
+  .block-wrap {
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .block-wrap {
+    padding: 0 15px;
+  }
+}

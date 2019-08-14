@@ -57,6 +57,7 @@
 
 .footer__top-social ul li {
   margin-right: 15px;
+  transition: all 0.3s linear;
 
   &:hover,
   &:focus {
@@ -80,7 +81,7 @@
   margin: 0;
   margin-bottom: 27px;
 
-  font-family: "Roboto Condensed";
+  font-family: $font-roboto;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
@@ -108,7 +109,7 @@
   width: 43%;
 }
 
-.footer__top-nav-contacts div {
+.footer__top-nav-contacts > div {
   display: flex;
   flex-direction: column;
 }
@@ -358,13 +359,9 @@
     margin-bottom: 28px;
   }
 
-  .footer__top-nav-contacts div {
+  .footer__top-nav-contacts > div {
     margin-bottom: 30px;
     display: none;
-  }
-
-  .footer__top-nav-contacts div a {
-    display: block;
   }
 
   .footer__bottom {
