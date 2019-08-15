@@ -87,8 +87,8 @@
     <section class="products">
       <div class="block-wrap">
         <h2>Service Device предлагает следующие товары и услуги</h2>
-        <ul>
-          <li>
+        <ul class="products__list">
+          <li class="products__item">
             <a href="#">
             <p>Производство печатных плат</p> 
             <picture>
@@ -98,7 +98,7 @@
               </picture>      
             </a>
           </li>
-          <li>
+          <li class="products__item">
             <a href="#">
               <p>Монтаж печатных плат</p> 
               <picture>
@@ -108,7 +108,7 @@
               </picture>      
             </a>
           </li>
-          <li>
+          <li class="products__item">
             <a href="#">
               <p>Комплектующие для светотехники</p> 
               <picture>
@@ -127,19 +127,19 @@
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <div>
+            <div class="consultation__field">
               <label class="visually-hidden" for="name">Имя</label>
               <input type="text" name="name" id="name" placeholder="Имя">
             </div>
-            <div>
+            <div class="consultation__field">
               <label class="visually-hidden" for="phone">Телефон</label>
               <input type="tel" name="phone" id="phone" placeholder="Телефон">
             </div>
-            <div>
+            <div class="consultation__field consultation__field--comment">
               <label class="visually-hidden" for="comment">Вопрос</label>
               <textarea name="comment" id="comment" rows="" placeholder="Ваш вопрос"></textarea>
             </div>
-            <div>
+            <div class="consultation__field consultation__field--consent">
               <input type="checkbox" id="consent" name="consent" class="visually-hidden">
               <label for="consent">Я согласен на обработку  персональных данных</label>
             </div>
@@ -150,21 +150,21 @@
     </section>
     <footer class="footer">
       <div class="footer__top">
-        <div class="footer__top-social">
+        <div class="footer__social">
           <a href="#"><img src="img/logo-footer.svg" width="202" height="52" alt="Logo"></a>
           <p>1999-2018 SD Service Devices</p>
-          <ul>
-            <li>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
               <a href="#"><span class="visually-hidden">Facebook</span>
                 <svg width="26" height="26"><use xlink:href="img/sprite_auto.svg#icon-facebook"></use></svg>
               </a>  
             </li>
-            <li>
+            <li class="footer__social-item">
               <a href="#"><span class="visually-hidden">Одноклассники</span>
                 <svg width="26" height="26"><use xlink:href="img/sprite_auto.svg#icon-odnokl"></use></svg>
               </a>  
             </li>
-            <li>
+            <li class="footer__social-item">
               <a href="#"><span class="visually-hidden">Вконтакте</span>
                 <svg width="26" height="26"><use xlink:href="img/sprite_auto.svg#icon-vk"></use></svg>
               </a>  
@@ -174,14 +174,14 @@
         <div class="footer__top-nav">
           <nav>
             <h3>Разделы сайта <span>&#43;<span></span></span></h3>
-            <ul>
-              <li><a href="#">О компании</a></li>
-              <li><a href="#">Комплектующие</a></li>
-              <li><a href="#">Продукты</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Производство печатных плат</a></li>
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">Монтаж печатных плат</a></li>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#">О компании</a></li>
+              <li class="footer__nav-item"><a href="#">Комплектующие</a></li>
+              <li class="footer__nav-item"><a href="#">Продукты</a></li>
+              <li class="footer__nav-item"><a href="#">Доставка</a></li>
+              <li class="footer__nav-item"><a href="#">Производство печатных плат</a></li>
+              <li class="footer__nav-item"><a href="#">Контакты</a></li>
+              <li class="footer__nav-item"><a href="#">Монтаж печатных плат</a></li>
             </ul>
           </nav>
           <div class="footer__top-nav-contacts">
@@ -211,19 +211,19 @@
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
+        <div class="consultation__field">
           <label class="visually-hidden" for="name">Имя</label>
           <input type="text" name="name" id="name" placeholder="Имя">
         </div>
-        <div>
+        <div class="consultation__field">
           <label class="visually-hidden" for="phone">Телефон</label>
           <input type="tel" name="phone" id="phone-cb" placeholder="Телефон">
         </div>
-        <div>
+        <div class="consultation__field consultation__field--comment">
           <label class="visually-hidden" for="comment">Вопрос</label>
           <textarea name="comment" id="comment" rows="" placeholder="Ваш вопрос"></textarea>
         </div>
-        <div>
+        <div class="consultation__field consultation__field--consent">
           <input type="checkbox" id="consent" name="consent" class="visually-hidden">
           <label for="consent">Я согласен на обработку  персональных данных</label>
         </div>
