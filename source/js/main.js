@@ -38,12 +38,12 @@
   });
 
   $('.footer__top-nav-contacts h3 span').click(function() {
-    if ($('.footer__top-nav-contacts div').css('display') === "block") {
+    if ($('.footer__top-nav-contacts > div').css('display') === "block") {
       $('.footer__top-nav-contacts h3 span').text('+');
-    } else if ($('.footer__top-nav-contacts div').css('display') === "none") {
+    } else if ($('.footer__top-nav-contacts > div').css('display') === "none") {
       $('.footer__top-nav-contacts h3 span').text('-');
     }
-    $('.footer__top-nav-contacts div').slideToggle( "slow", function() {
+    $('.footer__top-nav-contacts > div').slideToggle( "slow", function() {
     });
   });
   

@@ -184,6 +184,7 @@
   opacity: 0.8;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .modal__form form div:nth-child(4) label {
@@ -333,7 +334,7 @@
 
   .consultation__form form div {
     margin-bottom: 33px;
-    width: 100%;
+    width: max-content;
   }
 
   .consultation__form form input, 
