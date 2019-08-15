@@ -3,7 +3,7 @@
   text-align: left;
 }
 
-.products__wrap {
+.products > div {
   padding-top: 88px;
   padding-bottom: 94px;
 }
@@ -116,7 +116,7 @@
 
 
 @media (max-width: $desktop-width) {
-  .products__wrap {
+  .products > div {
     padding: 50px 25px 36px;
   }
 
@@ -150,7 +150,7 @@
     padding-bottom: 35px;
   }
 
-  .products__wrap {
+  .products > div {
     padding: 0 15px;
     padding-top: 50px;
   }
